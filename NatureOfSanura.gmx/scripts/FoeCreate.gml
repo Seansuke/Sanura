@@ -5,6 +5,7 @@ maxHp = hp;
 stamina = 0;
 
 lastGapDirection = TILES_DOWN;
+faceDirection = FACE_RIGHT;
 
 numberOfTiles = argument0;
 if(numberOfTiles < 1) {
@@ -15,6 +16,11 @@ attackWait = argument1;
 
 attackGap = argument2;
 attackGapMovement = argument3;
+
+playerSprite = sprite_index;
+shadowSprite = ShadowSprite;
+
+experience = hp * 2 + (60 - attackWait) * 10 + attackGap * 20 + attackGapMovement * 20;
 
 //Generate Tiles.
 var radius = 150;

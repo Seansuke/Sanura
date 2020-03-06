@@ -69,6 +69,7 @@
   <objects name="objects">
     <objects name="Map">
       <object>objects\Tile</object>
+      <object>objects\DrawExp</object>
       <object>objects\BulletPathNode</object>
       <object>objects\FoePlaceholder</object>
       <object>objects\SelectSlime</object>

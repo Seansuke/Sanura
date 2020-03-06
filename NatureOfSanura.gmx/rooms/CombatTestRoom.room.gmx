@@ -19,9 +19,9 @@ canvas_fullscreen(base_size);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1050</w>
+    <w>1042</w>
     <h>600</h>
-    <showGrid>-1</showGrid>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -30,8 +30,8 @@ canvas_fullscreen(base_size);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>-37</xoffset>
-    <yoffset>-110</yoffset>
+    <xoffset>-97</xoffset>
+    <yoffset>-41</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="BlueGrassBackground" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

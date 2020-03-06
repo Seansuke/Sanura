@@ -1,5 +1,8 @@
 // target = argument0
-draw_sprite_stretched(argument0.sprite_index,0,x-8,y+8,16,16);
+if(! variable_instance_exists(argument0, "playerSprite")) {
+    exit;
+}
+draw_sprite_stretched(argument0.playerSprite,0,x-8,y+8,24,24);
 if(argument0.hp > MAX_HP_BALLS) {
     draw_healthbar(x,y,room_width - x - 8,y+8, 
         100 * argument0.hp / argument0.maxHp, 
