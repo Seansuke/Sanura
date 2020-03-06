@@ -1,0 +1,1 @@
+attackingTimer = 12;
