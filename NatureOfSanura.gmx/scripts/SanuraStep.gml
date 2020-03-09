@@ -8,6 +8,7 @@ if(hp <= 0) {
 }
 playerSprite = SanuraIdleSprite;
 
+// TODO - move this
 base_size = 512;
 width = browser_width;
 height = browser_height;
@@ -48,15 +49,42 @@ if(selectedTile != noone) {
     setTargetTile(self, selectedTile);
 }
 
+attackTile = getCurrentAttackTile(Sanura.currentTile);
+
 // Move towards target.
 isMoving = false;
-if(targetTile != noone) {
-    speed = 0;
-    if(distance_to_point(targetTile.x, targetTile.y) > 0) {
-        isMoving = true;
-        move_towards_point(targetTile.x, targetTile.y, min(dashSpeed, distance_to_point(targetTile.x, targetTile.y)));
+speed = 0;
+if(targetTile != noone && targetTile != undefined) {
+    if(instance_exists(targetTile)) {
+        var distanceToTile = distance_to_point((targetTile).x, (targetTile).y);
+        if(distanceToTile > 0) {
+            isMoving = true;
+            var shorterDistance = min(dashSpeed, distanceToTile);
+            if(targetTile == attackTile) {
+                move_towards_point((targetTile).x, (targetTile).y, shorterDistance);
+            }
+            else {
+                // Teleport
+                effect_create_above(ef_spark, x, y, 2, c_white);
+                effect_create_above(ef_spark, x, y, 1, c_ltgray);
+                effect_create_above(ef_spark, x, y, 0, c_black);
+                x = (targetTile).x;
+                y = (targetTile).y;
+                shorterDistance = distanceToTile;
+            }
+            if(shorterDistance == distanceToTile) {
+                currentTile = targetTile;
+                if(nextTargetTile != noone) {
+                    targetTile = nextTargetTile;
+                    nextTargetTile = noone;
+                    isAttacking = (attackTile == targetTile);
+                }
+            }
+        }
     }
 }
+
+attackTile = getCurrentAttackTile(Sanura.currentTile);
 
 // Determine player sprite.
 if(isMoving) {

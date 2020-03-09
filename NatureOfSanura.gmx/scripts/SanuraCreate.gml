@@ -1,13 +1,17 @@
+maxHp = floor(global.sanuraHp);
+hp = maxHp;
+attackingTimer = 0;
+stamina = 0;
+alarm[0] = -1; // Took damage alarm.
+
+currentTile = noone;
+targetTile = currentTile;
+nextTargetTile = noone;
+attackTile = currentTile;
+
 playerSprite = SanuraIdleSprite;
 shadowSprite = ShadowSprite;
 isMoving = false;
-dashSpeed = 30;
-attackingTimer = 0;
-maxHp = floor(global.sanuraHp);
-hp = maxHp;
-alarm[0] = -1;
-stamina = 0;
+dashSpeed = 45;
 sprite_index = shadowSprite;
-
-targetTile = noone;
 faceDirection = FACE_RIGHT;

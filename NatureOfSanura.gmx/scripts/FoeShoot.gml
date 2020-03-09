@@ -1,7 +1,7 @@
 //FoeShoot(forcedDirection, currentAttackGap, gapMovement);
 // forcedDirection - Can be noone or a TILES_DOWN, TILES_UP, etc.
 // currentAttackGap - must be 1 or more. it is the amount of tiles that can be open for the player to movr
-// gapMovement - Must be between 1 and 4.  Changes how many tiles the center gap can move at maximum.
+// gapMovement - Must be between 1 and 3.  Changes how many tiles the center gap can move at maximum.
 
 var forcedDirection = argument0;
 var currentAttackGap = argument1;
@@ -53,7 +53,7 @@ for(var i = 0; i < TILES_MAX; i += 1) {
 // TODO - no clue how to calculate this yet.
 alarm[0] = attackWait;
 
-
-    if(random(100) < 5) {
-alarm[0] = 100;
+    // 10% chance to take a per attack
+    if(random(100) < 10) {
+        alarm[0] = attackWait * 3;
     }

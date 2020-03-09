@@ -10,16 +10,13 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>base_size = 512;
-width = browser_width;
-height = browser_height;
-canvas_fullscreen(base_size);</code>
+  <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1042</w>
+    <w>1050</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -29,7 +26,7 @@ canvas_fullscreen(base_size);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
+    <page>0</page>
     <xoffset>-97</xoffset>
     <yoffset>-41</yoffset>
   </makerSettings>

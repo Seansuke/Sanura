@@ -19,10 +19,13 @@
       <sprite>sprites\HpSprite</sprite>
       <sprite>sprites\EmptyHpSprite</sprite>
       <sprite>sprites\TileSprite</sprite>
+      <sprite>sprites\BulletPathNodeSprite</sprite>
+      <sprite>sprites\BulletPathNodeOnSprite</sprite>
       <sprite>sprites\ShadowSprite</sprite>
     </sprites>
     <sprites name="Foe">
       <sprite>sprites\SlimeSprite</sprite>
+      <sprite>sprites\MetalSlimeSprite</sprite>
       <sprite>sprites\WolfSprite</sprite>
       <sprite>sprites\MimicSprite</sprite>
       <sprite>sprites\GriffonSprite</sprite>
@@ -45,6 +48,8 @@
       <script>scripts\setTargetTile.gml</script>
       <script>scripts\SanuraAndFoeCollide.gml</script>
       <script>scripts\SanuraAndBulletCollide.gml</script>
+      <script>scripts\ClickAction.gml</script>
+      <script>scripts\getCurrentAttackTile.gml</script>
     </scripts>
     <scripts name="GUI">
       <script>scripts\TileCreate.gml</script>
@@ -56,9 +61,6 @@
       <script>scripts\FoeAndSanuraCollide.gml</script>
       <script>scripts\FoeStep.gml</script>
     </scripts>
-    <scripts name="Bullet">
-      <script>scripts\BulletPathNodeAndBulletCollide.gml</script>
-    </scripts>
     <scripts name="Helper">
       <script>scripts\CreateInRadius.gml</script>
       <script>scripts\canvas_fullscreen.gml</script>
@@ -66,6 +68,9 @@
     </scripts>
     <script>scripts\GameInitialize.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\TimesNewRomanFont</font>
+  </fonts>
   <objects name="objects">
     <objects name="Map">
       <object>objects\Tile</object>
@@ -73,6 +78,7 @@
       <object>objects\BulletPathNode</object>
       <object>objects\FoePlaceholder</object>
       <object>objects\SelectSlime</object>
+      <object>objects\SelectMetalSlime</object>
       <object>objects\SelectWolf</object>
       <object>objects\SelectMimic</object>
       <object>objects\SelectGriffon</object>
@@ -84,6 +90,7 @@
     <objects name="Foe">
       <object>objects\Foe</object>
       <object>objects\Slime</object>
+      <object>objects\MetalSlime</object>
       <object>objects\Wolf</object>
       <object>objects\Mimic</object>
       <object>objects\Griffon</object>
@@ -110,7 +117,7 @@
     <constant name="DIRECTION_LEFT">180</constant>
     <constant name="DIRECTION_UP">90</constant>
     <constant name="DIRECTION_DOWN">270</constant>
-    <constant name="BULLET_PATH_COUNT">3</constant>
+    <constant name="BULLET_PATH_COUNT">4</constant>
     <constant name="DIRECTION_DOWN_RADIANS">6</constant>
     <constant name="TILES_DOWN">0</constant>
     <constant name="TILES_DOWNRIGHT">1</constant>
