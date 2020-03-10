@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\PressSfx</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Sanura">
       <sprite>sprites\SanuraIdleSprite</sprite>

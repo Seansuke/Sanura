@@ -22,15 +22,9 @@ Show the foes rest time.
 fix stage select.
 more foes with lower variation.
 
+Active:
 lag time for attacking
 lag time when selecting multiple areas to go to.
-
-Done:
-Make attack tile red.
-Touch foe will initiative attack.  
-Tiles need bigger touches.
-Add teleport
-Add another bulletnode. 
 */
 
 

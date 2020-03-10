@@ -70,19 +70,28 @@ if(targetTile != noone && targetTile != undefined) {
                 effect_create_above(ef_spark, x, y, 0, c_black);
                 x = (targetTile).x;
                 y = (targetTile).y;
-                shorterDistance = distanceToTile;
+                targetTile = noone;
             }
-            if(shorterDistance == distanceToTile) {
-                currentTile = targetTile;
-                if(nextTargetTile != noone) {
-                    targetTile = nextTargetTile;
-                    nextTargetTile = noone;
-                    isAttacking = (attackTile == targetTile);
-                }
+        }
+        else {
+            currentTile = targetTile;
+            if(nextTargetTile != noone) {
+                targetTile = nextTargetTile;
+                nextTargetTile = noone;
+                attackTile = getCurrentAttackTile(Sanura.currentTile);
+                isAttacking = (attackTile == targetTile);
             }
         }
     }
 }
+        else {
+            if(nextTargetTile != noone) {
+                targetTile = nextTargetTile;
+                nextTargetTile = noone;
+                attackTile = getCurrentAttackTile(Sanura.currentTile);
+                isAttacking = (attackTile == targetTile);
+            }
+        }
 
 attackTile = getCurrentAttackTile(Sanura.currentTile);
 

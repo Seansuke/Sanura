@@ -56,4 +56,7 @@ alarm[0] = attackWait;
     // 10% chance to take a per attack
     if(random(100) < 10) {
         alarm[0] = attackWait * 3;
+        if(alarm[0] <= 60) { 
+            alarm[0] *= 2;
+        }
     }
