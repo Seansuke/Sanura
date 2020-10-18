@@ -36,6 +36,7 @@
     <sprites name="Effect">
       <sprite>sprites\DamageSprite</sprite>
       <sprite>sprites\DashSprite</sprite>
+      <sprite>sprites\SweatSprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -52,6 +53,7 @@
       <script>scripts\SanuraAndBulletCollide.gml</script>
       <script>scripts\ClickAction.gml</script>
       <script>scripts\getCurrentAttackTile.gml</script>
+      <script>scripts\setTargetTileToAttackTile.gml</script>
     </scripts>
     <scripts name="GUI">
       <script>scripts\TileCreate.gml</script>
@@ -85,14 +87,15 @@
       <object>objects\SelectMimic</object>
       <object>objects\SelectGriffon</object>
       <object>objects\SelectDragon</object>
+      <object>objects\Animation</object>
     </objects>
     <objects name="Player">
       <object>objects\Sanura</object>
     </objects>
     <objects name="Foe">
       <object>objects\Foe</object>
-      <object>objects\Slime</object>
       <object>objects\MetalSlime</object>
+      <object>objects\Slime</object>
       <object>objects\Wolf</object>
       <object>objects\Mimic</object>
       <object>objects\Griffon</object>

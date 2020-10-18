@@ -3,6 +3,7 @@ global.tiles = ds_list_create();
 global.gapTiles = ds_list_create();
 global.bulletSpeed = 4;
 global.sanuraHp = 4;
+global.dashLevel = 1;
 global.experience = 0;
 draw_set_font(TimesNewRomanFont);
 
@@ -18,11 +19,14 @@ instructions
 DDRisms
 mana bar
 magic
-Show the foes rest time. 
 fix stage select.
 more foes with lower variation.
 
-Active:
+Test:
+
+
+Done:
+Show the foes rest time. 
 lag time for attacking
 lag time when selecting multiple areas to go to.
 */

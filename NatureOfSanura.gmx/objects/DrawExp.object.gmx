@@ -25,11 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>requiredExp = power(6, (global.sanuraHp - 2));
-while(global.experience &gt;= requiredExp) {
-    requiredExp = power(6, (global.sanuraHp - 2));
+            <string>requiredExp = 0;
+while(global.experience &gt;= requiredExp &amp;&amp; global.sanuraHp &lt; 14) {
+    requiredExp = 20 * power(2, (global.sanuraHp * 0.5));
     if(global.experience &gt;= requiredExp) {
         global.sanuraHp += 1;
+        global.dashLevel += 0.5;
     }
 }
 </string>
@@ -56,6 +57,7 @@ while(global.experience &gt;= requiredExp) {
             <kind>1</kind>
             <string>draw_text(x,y,"XP:" + string(global.experience) + "/" + string(requiredExp));
 draw_text(x,y + 15,"HP:" + string(global.sanuraHp));
+draw_text(x,y + 30,"Attack Speed:" + string(floor(global.dashLevel)));
 </string>
           </argument>
         </arguments>

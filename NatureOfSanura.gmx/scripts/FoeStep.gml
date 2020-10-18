@@ -12,3 +12,9 @@ if((Sanura).x - 20 < x) {
     faceDirection = FACE_LEFT;
 }
 
+if(alarm[0] mod 10 == 0) {
+    for(var animationX = 0; animationX < alarm[0] / 10; animationX += 1) {
+        var animationId = instance_create(x + animationX * 24,y - 50,Animation);
+        (animationId).sprite_index = SweatSprite;
+    }
+}

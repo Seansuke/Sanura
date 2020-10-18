@@ -1,1 +1,1 @@
-attackingTimer = 12;
+attackingTimer = 6;

@@ -20,7 +20,6 @@ attackGapMovement = argument3;
 playerSprite = sprite_index;
 shadowSprite = ShadowSprite;
 
-experience = max(10, hp * 2 + (60 - attackWait) * 10 + attackGap * 20 + attackGapMovement * 20);
 
 //Generate Tiles.
 var radius = 150;
