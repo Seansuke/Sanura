@@ -8,7 +8,7 @@
   <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="4">
+    <event eventtype="4" ename="MapSanura">
       <action>
         <libid>1</libid>
         <id>601</id>

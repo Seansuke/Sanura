@@ -1,5 +1,8 @@
 var clickX = argument0;
 var clickY = argument1;
+if(instance_position(clickX, clickY, DarkenButton)) {
+    exit;
+}
 var tile = instance_nearest(clickX, clickY, Tile);
 var foe = instance_nearest(x, y, Foe);
 var tileDistance = point_distance(clickX, clickY, tile.x, tile.y);

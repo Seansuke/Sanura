@@ -1,8 +1,11 @@
-//FoeCreate(numberOfTiles, alarm)
+//FoeCreate(numberOfTiles, attackWait, attackGapMovement, hp)
 
 hp = argument4;
 maxHp = hp;
 stamina = 0;
+maxStamina = 0;
+subStamina = 0;
+maxSubStamina = 0;
 
 lastGapDirection = TILES_DOWN;
 faceDirection = FACE_RIGHT;

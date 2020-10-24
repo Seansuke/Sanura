@@ -24,6 +24,8 @@
       <sprite>sprites\BulletPathNodeSprite</sprite>
       <sprite>sprites\BulletPathNodeOnSprite</sprite>
       <sprite>sprites\ShadowSprite</sprite>
+      <sprite>sprites\StaminaSprite</sprite>
+      <sprite>sprites\DarkenGuiSprite</sprite>
     </sprites>
     <sprites name="Foe">
       <sprite>sprites\SlimeSprite</sprite>
@@ -37,6 +39,7 @@
       <sprite>sprites\DamageSprite</sprite>
       <sprite>sprites\DashSprite</sprite>
       <sprite>sprites\SweatSprite</sprite>
+      <sprite>sprites\ParticleSprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -58,6 +61,7 @@
     <scripts name="GUI">
       <script>scripts\TileCreate.gml</script>
       <script>scripts\HpGuiDraw.gml</script>
+      <script>scripts\StaminaGuiDraw.gml</script>
     </scripts>
     <scripts name="Foe">
       <script>scripts\FoeCreate.gml</script>
@@ -69,6 +73,8 @@
       <script>scripts\CreateInRadius.gml</script>
       <script>scripts\canvas_fullscreen.gml</script>
       <script>scripts\GoToCombatRoom.gml</script>
+      <script>scripts\DockUpperRight.gml</script>
+      <script>scripts\getPressedArray.gml</script>
     </scripts>
     <script>scripts\GameInitialize.gml</script>
   </scripts>
@@ -77,17 +83,14 @@
   </fonts>
   <objects name="objects">
     <objects name="Map">
-      <object>objects\Tile</object>
+      <object>objects\MapSanura</object>
       <object>objects\DrawExp</object>
-      <object>objects\BulletPathNode</object>
-      <object>objects\FoePlaceholder</object>
       <object>objects\SelectSlime</object>
       <object>objects\SelectMetalSlime</object>
       <object>objects\SelectWolf</object>
       <object>objects\SelectMimic</object>
       <object>objects\SelectGriffon</object>
       <object>objects\SelectDragon</object>
-      <object>objects\Animation</object>
     </objects>
     <objects name="Player">
       <object>objects\Sanura</object>
@@ -103,9 +106,16 @@
     </objects>
     <objects name="GUI">
       <object>objects\HpGui</object>
+      <object>objects\DarkenButton</object>
     </objects>
     <objects name="Bullet">
       <object>objects\Bullet</object>
+    </objects>
+    <objects name="Combat">
+      <object>objects\Animation</object>
+      <object>objects\Tile</object>
+      <object>objects\BulletPathNode</object>
+      <object>objects\FoePlaceholder</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -113,7 +123,7 @@
     <room>rooms\SelectRoom</room>
     <room>rooms\CombatTestRoom</room>
   </rooms>
-  <constants number="21">
+  <constants number="24">
     <constant name="CONTROL_TYPE_ABSOLUTE">1</constant>
     <constant name="CONTROL_TYPE_RELATIVE">0</constant>
     <constant name="MAX_HP_BALLS">14</constant>
@@ -135,6 +145,9 @@
     <constant name="TILES_MAX">8</constant>
     <constant name="FACE_LEFT">-1</constant>
     <constant name="FACE_RIGHT">1</constant>
+    <constant name="DAMAGE_ALARM">0</constant>
+    <constant name="MOVE_COOLDOWN_ALARM">1</constant>
+    <constant name="DARKEN">0</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
