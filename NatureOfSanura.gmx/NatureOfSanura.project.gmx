@@ -30,10 +30,20 @@
     <sprites name="Foe">
       <sprite>sprites\SlimeSprite</sprite>
       <sprite>sprites\MetalSlimeSprite</sprite>
+      <sprite>sprites\GoldSlimeSprite</sprite>
       <sprite>sprites\WolfSprite</sprite>
       <sprite>sprites\MimicSprite</sprite>
       <sprite>sprites\GriffonSprite</sprite>
       <sprite>sprites\DragonSprite</sprite>
+      <sprite>sprites\ClawSprite</sprite>
+      <sprite>sprites\HarpySprite</sprite>
+      <sprite>sprites\BeeSprite</sprite>
+      <sprite>sprites\SahaginSprite</sprite>
+      <sprite>sprites\BatSprite</sprite>
+      <sprite>sprites\ChimeraSprite</sprite>
+      <sprite>sprites\FishSprite</sprite>
+      <sprite>sprites\HellhoundSprite</sprite>
+      <sprite>sprites\EntSprite</sprite>
     </sprites>
     <sprites name="Effect">
       <sprite>sprites\DamageSprite</sprite>
@@ -85,12 +95,23 @@
     <objects name="Map">
       <object>objects\MapSanura</object>
       <object>objects\DrawExp</object>
-      <object>objects\SelectSlime</object>
+      <object>objects\SelectFoe</object>
       <object>objects\SelectMetalSlime</object>
+      <object>objects\SelectGoldSlime</object>
+      <object>objects\SelectSlime</object>
       <object>objects\SelectWolf</object>
       <object>objects\SelectMimic</object>
       <object>objects\SelectGriffon</object>
       <object>objects\SelectDragon</object>
+      <object>objects\SelectClaw</object>
+      <object>objects\SelectHarpy</object>
+      <object>objects\SelectBee</object>
+      <object>objects\SelectSahagin</object>
+      <object>objects\SelectBat</object>
+      <object>objects\SelectChimera</object>
+      <object>objects\SelectFish</object>
+      <object>objects\SelectHellhound</object>
+      <object>objects\SelectEnt</object>
     </objects>
     <objects name="Player">
       <object>objects\Sanura</object>
@@ -98,11 +119,21 @@
     <objects name="Foe">
       <object>objects\Foe</object>
       <object>objects\MetalSlime</object>
+      <object>objects\GoldSlime</object>
       <object>objects\Slime</object>
       <object>objects\Wolf</object>
       <object>objects\Mimic</object>
       <object>objects\Griffon</object>
       <object>objects\Dragon</object>
+      <object>objects\Claw</object>
+      <object>objects\Harpy</object>
+      <object>objects\Bee</object>
+      <object>objects\Sahagin</object>
+      <object>objects\Bat</object>
+      <object>objects\Chimera</object>
+      <object>objects\Fish</object>
+      <object>objects\Hellhound</object>
+      <object>objects\Ent</object>
     </objects>
     <objects name="GUI">
       <object>objects\HpGui</object>

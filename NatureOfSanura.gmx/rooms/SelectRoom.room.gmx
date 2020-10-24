@@ -51,14 +51,24 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="SelectWolf" x="416" y="608" name="inst_BFA438B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SelectSlime" x="224" y="480" name="inst_FAC9BD16" locked="0" code="" scaleX="1.53333330154419" scaleY="0.809523820877075" colour="4294967295" rotation="0"/>
-    <instance objName="SelectGriffon" x="832" y="608" name="inst_6E92B7BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SelectDragon" x="1056" y="544" name="inst_D5826942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SelectMimic" x="640" y="512" name="inst_949765B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectWolf" x="2624" y="384" name="inst_BFA438B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectSlime" x="1120" y="256" name="inst_FAC9BD16" locked="0" code="" scaleX="1.53333330154419" scaleY="0.809523820877075" colour="4294967295" rotation="0"/>
+    <instance objName="SelectGriffon" x="4480" y="960" name="inst_6E92B7BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectDragon" x="3424" y="1088" name="inst_D5826942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectMimic" x="3872" y="512" name="inst_949765B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="DrawExp" x="224" y="96" name="inst_D3C1C911" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SelectMetalSlime" x="96" y="320" name="inst_B334FDC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="MapSanura" x="288" y="224" name="inst_4D75C135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectMetalSlime" x="480" y="256" name="inst_B334FDC8" locked="0" code="" scaleX="3.66666674613953" scaleY="3.2380952835083" colour="4294967295" rotation="0"/>
+    <instance objName="MapSanura" x="96" y="192" name="inst_4D75C135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectGoldSlime" x="832" y="288" name="inst_BB5D0A27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectBee" x="1376" y="288" name="inst_BB506754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectBat" x="1760" y="224" name="inst_A3132B3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectClaw" x="1984" y="352" name="inst_9AA52C4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectFish" x="2304" y="256" name="inst_3A560807" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectSahagin" x="2912" y="288" name="inst_0EB03089" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectHarpy" x="3264" y="448" name="inst_94408A3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectEnt" x="3552" y="352" name="inst_ECC2BF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectHellhound" x="4320" y="448" name="inst_A6E99573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectChimera" x="3968" y="1280" name="inst_0D24F76E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
