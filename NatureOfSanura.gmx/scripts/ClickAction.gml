@@ -1,6 +1,6 @@
 var clickX = argument0;
 var clickY = argument1;
-if(instance_position(clickX, clickY, DarkenButton)) {
+if(instance_place(clickX, clickY, GuiButton)) {
     exit;
 }
 var tile = instance_nearest(clickX, clickY, Tile);

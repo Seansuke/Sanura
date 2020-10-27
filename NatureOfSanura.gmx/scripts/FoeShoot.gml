@@ -44,6 +44,7 @@ for(var i = 0; i < TILES_MAX; i += 1) {
     selectedTile = (ds_list_find_value(global.tiles, i));
     bullet = instance_create(x,y, Bullet);
     (bullet).direction = point_direction(x,y,(selectedTile).x, (selectedTile).y);
+    (bullet).selectedTile = selectedTile;
     // TODO - Fix this speed
     (bullet).speed = global.bulletSpeed;
     
@@ -53,8 +54,8 @@ for(var i = 0; i < TILES_MAX; i += 1) {
 // TODO - no clue how to calculate this yet.
 alarm[0] = attackWait;
 
-    // 10% chance to take a per attack
-    if(random(100) < 10) {
+    // 9% chance to take a break
+    if(random(100) < 9) {
         alarm[0] = attackWait * 3;
         if(alarm[0] <= 60) { 
             alarm[0] *= 2;

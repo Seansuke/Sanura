@@ -13,7 +13,8 @@ else {
         if (argument0.stamina + 1 == i) {
             draw_sprite_ext(StaminaSprite, -1, x + i * HP_GUI_OFFSET, y - 16, 1,1, 0, c_black, 1);
             // Draw a recharging stamina ball
-            draw_sprite_ext(StaminaSprite, -1, x + i * HP_GUI_OFFSET, y - 16, (argument0.stamina / argument0.maxStamina),(argument0.stamina / argument0.maxStamina), 0, c_fuchsia, 1);
+            var subStaminaRatio = argument0.subStamina / argument0.maxSubStamina;
+            draw_sprite_ext(StaminaSprite, -1, x + i * HP_GUI_OFFSET, y - 16, subStaminaRatio,subStaminaRatio, 0, c_fuchsia, 1);
         }
         else if(argument0.stamina >= i) {
             draw_sprite(StaminaSprite, -1, x + i * HP_GUI_OFFSET, y - 16);

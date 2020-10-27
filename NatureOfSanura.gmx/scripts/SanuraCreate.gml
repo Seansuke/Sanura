@@ -12,11 +12,14 @@ currentTile = noone;
 targetTile = currentTile;
 nextTargetTile = noone;
 attackTile = noone;
+nature = DARKEN;
 
 playerSprite = SanuraIdleSprite;
 shadowSprite = ShadowSprite;
 isMoving = false;
+attackBuff = 0;
 dashSpeed = 5 + global.dashLevel * 5;
 attackCooldown = max(20 - global.attackSpeed * 3, 5);
 sprite_index = shadowSprite;
 faceDirection = FACE_RIGHT;
+lastTimingBulletId = noone;

@@ -682,6 +682,45 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="55">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Sanura.nature = (Sanura.nature + MAX_NATURE) mod MAX_NATURE;
+
+var buttonList = array_create(10);
+buttonList[DARKEN] = DarkenButton;
+buttonList[GLOW] = GlowButton;
+buttonList[TOXICATE] = ToxicateButton;
+buttonList[PURIFY] = PurifyButton;
+buttonList[ECHO] = EchoButton;
+buttonList[SILENCE] = SilenceButton;
+buttonList[STATIC] = StaticButton;
+buttonList[CLEAVE] = CleaveButton;
+buttonList[BLEED] = BleedButton;
+buttonList[DRAIN] = DrainButton;
+
+with(buttonList[Sanura.nature]) {
+    event_user(0);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="50">
       <action>
         <libid>1</libid>

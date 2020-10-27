@@ -9,6 +9,15 @@ global.dashLevel = 1;
 global.attackSpeed = 1;
 global.experience = 0;
 global.spellStamina[DARKEN] = 2;
+global.spellStamina[GLOW] = 1;
+global.spellStamina[TOXICATE] = 1;
+global.spellStamina[PURIFY] = 4;
+global.spellStamina[ECHO] = 1;
+global.spellStamina[SILENCE] = 2;
+global.spellStamina[STATIC] = 3;
+global.spellStamina[CLEAVE] = 4;
+global.spellStamina[BLEED] = 1;
+global.spellStamina[DRAIN] = 4;
 
 draw_set_font(TimesNewRomanFont);
 

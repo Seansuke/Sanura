@@ -26,6 +26,16 @@
       <sprite>sprites\ShadowSprite</sprite>
       <sprite>sprites\StaminaSprite</sprite>
       <sprite>sprites\DarkenGuiSprite</sprite>
+      <sprite>sprites\GlowGuiSprite</sprite>
+      <sprite>sprites\ToxicateGuiSprite</sprite>
+      <sprite>sprites\PurifyGuiSprite</sprite>
+      <sprite>sprites\EchoGuiSprite</sprite>
+      <sprite>sprites\SilenceGuiSprite</sprite>
+      <sprite>sprites\StaticGuiSprite</sprite>
+      <sprite>sprites\CleaveGuiSprite</sprite>
+      <sprite>sprites\BleedGuiSprite</sprite>
+      <sprite>sprites\DrainGuiSprite</sprite>
+      <sprite>sprites\RotateSprite</sprite>
     </sprites>
     <sprites name="Foe">
       <sprite>sprites\SlimeSprite</sprite>
@@ -85,6 +95,7 @@
       <script>scripts\GoToCombatRoom.gml</script>
       <script>scripts\DockUpperRight.gml</script>
       <script>scripts\getPressedArray.gml</script>
+      <script>scripts\NewTextAnimation.gml</script>
     </scripts>
     <script>scripts\GameInitialize.gml</script>
   </scripts>
@@ -137,7 +148,22 @@
     </objects>
     <objects name="GUI">
       <object>objects\HpGui</object>
+      <object>objects\GuiButton</object>
+      <object>objects\NatureButton</object>
       <object>objects\DarkenButton</object>
+      <object>objects\GlowButton</object>
+      <object>objects\ToxicateButton</object>
+      <object>objects\PurifyButton</object>
+      <object>objects\EchoButton</object>
+      <object>objects\SilenceButton</object>
+      <object>objects\StaticButton</object>
+      <object>objects\CleaveButton</object>
+      <object>objects\BleedButton</object>
+      <object>objects\DrainButton</object>
+      <object>objects\RotateNatureButton</object>
+      <object>objects\PreviousRotateNatureButton</object>
+      <object>objects\TopButtonPlaceholder</object>
+      <object>objects\BottomButtonPlaceholder</object>
     </objects>
     <objects name="Bullet">
       <object>objects\Bullet</object>
@@ -154,7 +180,7 @@
     <room>rooms\SelectRoom</room>
     <room>rooms\CombatTestRoom</room>
   </rooms>
-  <constants number="24">
+  <constants number="34">
     <constant name="CONTROL_TYPE_ABSOLUTE">1</constant>
     <constant name="CONTROL_TYPE_RELATIVE">0</constant>
     <constant name="MAX_HP_BALLS">14</constant>
@@ -179,6 +205,16 @@
     <constant name="DAMAGE_ALARM">0</constant>
     <constant name="MOVE_COOLDOWN_ALARM">1</constant>
     <constant name="DARKEN">0</constant>
+    <constant name="GLOW">1</constant>
+    <constant name="TOXICATE">2</constant>
+    <constant name="PURIFY">3</constant>
+    <constant name="ECHO">4</constant>
+    <constant name="SILENCE">5</constant>
+    <constant name="STATIC">6</constant>
+    <constant name="CLEAVE">7</constant>
+    <constant name="BLEED">8</constant>
+    <constant name="DRAIN">9</constant>
+    <constant name="MAX_NATURE">10</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
