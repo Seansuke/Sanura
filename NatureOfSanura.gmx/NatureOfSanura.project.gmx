@@ -67,6 +67,9 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="Map">
+      <script>scripts\MapFoeCreate.gml</script>
+    </scripts>
     <scripts name="Sanura">
       <script>scripts\SanuraCreate.gml</script>
       <script>scripts\SanuraDraw.gml</script>
@@ -108,6 +111,7 @@
       <object>objects\DrawExp</object>
       <object>objects\SelectFoe</object>
       <object>objects\SelectMetalSlime</object>
+      <object>objects\SelectTutorial</object>
       <object>objects\SelectGoldSlime</object>
       <object>objects\SelectSlime</object>
       <object>objects\SelectWolf</object>
@@ -164,6 +168,7 @@
       <object>objects\PreviousRotateNatureButton</object>
       <object>objects\TopButtonPlaceholder</object>
       <object>objects\BottomButtonPlaceholder</object>
+      <object>objects\TutorialBox</object>
     </objects>
     <objects name="Bullet">
       <object>objects\Bullet</object>

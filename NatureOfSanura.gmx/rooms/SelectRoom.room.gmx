@@ -7,7 +7,7 @@
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
   <code></code>
@@ -56,9 +56,8 @@
     <instance objName="SelectGriffon" x="4480" y="960" name="inst_6E92B7BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectDragon" x="3424" y="1088" name="inst_D5826942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectMimic" x="3872" y="512" name="inst_949765B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="DrawExp" x="224" y="96" name="inst_D3C1C911" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SelectMetalSlime" x="480" y="256" name="inst_B334FDC8" locked="0" code="" scaleX="3.66666674613953" scaleY="3.2380952835083" colour="4294967295" rotation="0"/>
-    <instance objName="MapSanura" x="96" y="192" name="inst_4D75C135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DrawExp" x="32" y="32" name="inst_D3C1C911" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="MapSanura" x="192" y="256" name="inst_4D75C135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectGoldSlime" x="832" y="288" name="inst_BB5D0A27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectBee" x="1376" y="288" name="inst_BB506754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectBat" x="1760" y="224" name="inst_A3132B3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -69,6 +68,7 @@
     <instance objName="SelectEnt" x="3552" y="352" name="inst_ECC2BF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectHellhound" x="4320" y="448" name="inst_A6E99573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectChimera" x="3968" y="1280" name="inst_0D24F76E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SelectMetalSlime" x="640" y="320" name="inst_0E588E54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
