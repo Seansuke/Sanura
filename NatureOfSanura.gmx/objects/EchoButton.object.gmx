@@ -82,7 +82,7 @@
     }
     with(Bullet) {
         // Clear bullets in this line
-        if(selectedTile == self.currentSanura.currentTile) { 
+        if(selectedTile == other.currentSanura.currentTile) { 
             repeat(4) {
                 effect_create_above(ef_smoke, x - 32 + random(64), y - 32 + random(64), 0, c_dkgray);
             }
