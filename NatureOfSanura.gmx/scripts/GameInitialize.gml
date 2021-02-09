@@ -18,6 +18,7 @@ global.spellStamina[STATIC] = 3;
 global.spellStamina[CLEAVE] = 4;
 global.spellStamina[BLEED] = 1;
 global.spellStamina[DRAIN] = 4;
+global.pause = false;
 
 draw_set_font(TimesNewRomanFont);
 

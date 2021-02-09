@@ -36,6 +36,8 @@
       <sprite>sprites\BleedGuiSprite</sprite>
       <sprite>sprites\DrainGuiSprite</sprite>
       <sprite>sprites\RotateSprite</sprite>
+      <sprite>sprites\GearSprite</sprite>
+      <sprite>sprites\VerticalCycleSprite</sprite>
     </sprites>
     <sprites name="Foe">
       <sprite>sprites\SlimeSprite</sprite>
@@ -178,6 +180,13 @@
       <object>objects\Tile</object>
       <object>objects\BulletPathNode</object>
       <object>objects\FoePlaceholder</object>
+    </objects>
+    <objects name="Settings">
+      <object>objects\CycleButtonParent</object>
+      <object>objects\SettingsButton</object>
+      <object>objects\CameraWidthCycle</object>
+      <object>objects\CameraHeightCycle</object>
+      <object>objects\CameraZoomCycle</object>
     </objects>
   </objects>
   <rooms name="rooms">

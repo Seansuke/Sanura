@@ -69,6 +69,7 @@
     <instance objName="SelectHellhound" x="4320" y="448" name="inst_A6E99573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectChimera" x="3968" y="1280" name="inst_0D24F76E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SelectMetalSlime" x="640" y="320" name="inst_0E588E54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SettingsButton" x="96" y="96" name="inst_01D630D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
