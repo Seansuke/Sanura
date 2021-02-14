@@ -50,6 +50,8 @@
             <kind>1</kind>
             <string>view_wview[0] *= 1.25;
 view_hview[0] *= 1.25;
+view_hborder[0] *= 1.25;
+view_vborder[0] *= 1.25;
 </string>
           </argument>
         </arguments>
@@ -74,6 +76,8 @@ view_hview[0] *= 1.25;
             <kind>1</kind>
             <string>view_wview[0] *= 0.75;
 view_hview[0] *= 0.75;
+view_hborder[0] *= 0.75;
+view_vborder[0] *= 0.75;
 </string>
           </argument>
         </arguments>

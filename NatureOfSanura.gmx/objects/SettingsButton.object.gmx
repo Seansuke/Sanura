@@ -91,8 +91,6 @@ menuOffsetX = 64;
 i = 1;
 j = 1;
 
-instance_create(x + menuOffsetX + i++ * menuSpaceX,y + j++ * menuSpaceY, CameraWidthCycle);
-instance_create(x + menuOffsetX + i++ * menuSpaceX,y + j++ * menuSpaceY, CameraHeightCycle);
 instance_create(x + menuOffsetX + i++ * menuSpaceX,y + j++ * menuSpaceY, CameraZoomCycle);
 </string>
           </argument>

@@ -97,6 +97,7 @@
     <scripts name="Helper">
       <script>scripts\CreateInRadius.gml</script>
       <script>scripts\canvas_fullscreen.gml</script>
+      <script>scripts\canvas_window.gml</script>
       <script>scripts\GoToCombatRoom.gml</script>
       <script>scripts\DockUpperRight.gml</script>
       <script>scripts\getPressedArray.gml</script>

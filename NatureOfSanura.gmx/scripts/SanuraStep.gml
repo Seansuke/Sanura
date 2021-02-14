@@ -8,12 +8,6 @@ if(hp <= 0) {
 }
 playerSprite = SanuraIdleSprite;
 
-// TODO - move this
-base_size = 512;
-width = browser_width;
-height = browser_height;
-canvas_fullscreen(base_size);
-
 // Determine target tile based on gamepad input.
 var selectedTile = noone;
 var gamepadIndex = 0;

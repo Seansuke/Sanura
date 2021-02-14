@@ -1,18 +1,14 @@
-/// @function               canvas_fullscreen(base)
-/// @param {int}    base    The base value for scaling on both axis
+// Requires Global Game Setting > HTML5 > Graphics > Full Scaling Enabled.
+browserw = browser_width
+browserh = browser_height
 
-var _base = argument0;
-var _bw = browser_width;
-var _bh = browser_height;
+view_hview[0] = browserh;
+view_wview[0] = browserw;
+view_wport[0] = browserh / 2;
+view_hport[0] = browserw / 2;
+view_xview[0] = ((-browserw)/2) + view_wport[0];
+view_yview[0] = ((-browserh)/2) + view_hport[0];
 
-var minLength = min(_bw, _bh);
-view_wport[0] = minLength;
-view_hport[0] = minLength;
-window_set_size(minLength, minLength);
-window_center();
+window_set_size(browserw, browserh)
 
-view_wview[0] = room_width;
-view_hview[0] = room_height;
-view_wport[0] = minLength;
-view_hport[0] = minLength;
-surface_resize(application_surface, view_wport[0], view_hport[0]);
+window_center()

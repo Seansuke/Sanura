@@ -52,6 +52,9 @@
     alarm[0] = 60;
     image_alpha = 0.4;
     GoToCombatRoom(foe);    
+} 
+else {
+    alarm[0] = 60;
 }
 </string>
           </argument>
